@@ -1,0 +1,109 @@
+ <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <title>Contacto - Cafeteria Aroma</title>
+    </head>
+    <body>
+        <!-- Header: contiene logo y navegación principal -->
+        <header>
+            <h1>Cafeteria Aroma</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="menu.html">Menu</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="pedido.html">Pedidos</a>
+                <a href="https://cafearoma.com">Sitio Oficial</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                 <form action="#" method="get">
+                     <fieldset>
+                     <legend>Datos del cliente</legend>
+                     <label for="nombre">Nombre completo *</label><br>
+                     <input type="text" id="nombre" name="nombre" required placeholder="Ej: Ana Pérez"><br>
+                     <label for="correo">Correo electrónico *</label><br>
+                     <input type="email" id="correo" name="correo" required placeholder="ana@correo.com"><br>
+                     <label for="telefono">Teléfono</label><br>
+                     <input type="tel" id="telefono" name="telefono" placeholder="Ej: 71234567"
+
+                     pattern="[0-9] {8,}" title="Solo numeros,minimo 8 digitos"><br>
+                     <label for="fecha">Fecha de recogida</label><br>
+                     <input type="date" id="fecha" name="fecha" placeholder="de/mm/aaaa"><br>
+                     <label for="hora">Hora de recogida</label><br>
+                     <input type="time" id="hora" name="hora" placeholder="--:--"><br>
+                   </fieldset>
+
+                     <fieldset>
+                     <legend>Detalle del pedido</legend>
+                     <label for="bebida">Bebida *</label><br>
+                     <select id="bebida" name="bebida" required><br>
+                     <option value="seleccion">-- Selecciona una bebida --</option>
+                     <option value="americano">Café Americano</option>
+                     <option value="latte">Latte con Vainilla</option>
+                     <option value="frappe">Frappe de chocolate</option>
+                     <option value="capuccino">Capuccino Especial</option>
+                     </select><br>
+                     
+                     <label for="bebida">Postres</label><br>
+                     <select id="postre" name="postre" >
+                     <option value="seleccion">-- Selecciona un postre --</option>
+                     <option value="brownie">Brownie Casero</option>
+                     <option value="croissant">Croissant de mantequilla</option>
+                     <option value="cheesecake">Cheesecake</option>
+                     </select><br>
+
+                     <label for="tamaño">Tamaño *</label><br>
+                     <label for="pequeno">Pequeño</label>
+                     <input type="radio" id="pequeno" name="tamano" value="pequeno" required>
+                     <label for="mediano">Mediano</label>
+                     <input type="radio" id="mediano" name="tamano" value="mediano">
+                     <label for="grande">Grande</label>
+                     <input type="radio" id="grande" name="tamano" value="grande"><br>
+
+                     <label for="cantidad">Cantidad *</label><br>
+                     <input type="number" id="cantidad" name="cantidad" min="1" max="10" required><br>
+
+                     <label for="extras">Extras</label><br>
+                     <label for="leche">Leche vegetal</label>
+                     <input type="radio" id="leche" name="extra" value="leche">
+                     <label for="shot">Extra shot</label>
+                     <input type="radio" id="shot" name="extra" value="shot">
+                     <label for="sin">Sin azúcar</label>
+                     <input type="radio" id="sin" name="extra" value="sin"><br>
+
+                    <label for="text">Indicaciones/ Comentarios</label><br>
+                     <textarea
+                     id="text"
+                     name="text"
+                     rows="5"
+                     cols="30"
+                     placeholder="Ej: Sin canela,entregar en vaso termico...">
+                     </textarea>
+                     </fieldset>
+
+                     <fieldset>
+                     <legend>Entrega</legend>
+                     <input type="radio" id="tienda" name="entrega" value="tienda">
+                     <label for="tienda">Retiro en tienda</label>
+                     <input type="radio" id="domicilio" name="entrega" value="domicilio">
+                     <label for="domicilio">Entrega a domicilio</label><br>
+
+                     <label for="direccion">Dirección (si es domicilio)</label><br>
+                     <textarea
+                     id="direccion"
+                     name="direccion"
+                     rows="5"
+                     cols="30"
+                     placeholder="Calle, número, referencia">
+                     </textarea>
+                     </fieldset>
+                     <input type="hidden" name="sucursal" value="central">
+                     <button type="submit">Enviar pedido</button>
+                     <button type="reset">Limpiar</button>
+                 </form>
+            </section>
+        </main>

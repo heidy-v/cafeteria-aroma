@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- contiene metadatos y recursos -->
+     
+    <head>
+        <!-- soporte universal de caracteres -->
+        <meta charset="UTF - 8" />  
+        <!-- adapta a cualquier dispositivo -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <meta
+          name="Bienvenidos a la Cafeteria Aroma, cafe de especialidad y reposteria artesanal en Cochabamba."
+          content="Descubre el mejor cafe de especialidad en Aroma."
+        />
+        <title> Bienvenidos a la Cafeteria "Aroma" </title>
+        <!-- enlace al archivo styles.css -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/print.css" media="print" />
+    </head>
+    <body>  
+        <!-- Header: contiene logo y navegación principal --> 
+     <header>
+        <h1> Bienvenidos a la Cafeteria "Aroma"</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menu</a>
+            <a href="contacto.html">Contactos</a>
+            <a href="pedido.html">Pedidos</a>
+            <a href="https://cafearoma.com">Sitio Oficial</a>
+        </nav>
+     </header>
+     <hr />
+
+     <main>
+        <!-- Main: contenido principal de la página -->
+         
+        <section>
+            <p>!Pronto nuesto sitio estará disponible!</p>
+            <p>Descubre nuestros cafes de especialidad y reposteria artesanal.</p>
+           <!-- imagen decorariva del menu -->
+            <img
+              src="img/taza-cafe.jpg" width="300" height="200"
+            />
+        </section>
+
+        <section>
+            <h2>Top Ventas</h2>
+        <table border="2">
+            <caption>
+                Productos mas vendidos
+            </caption>
+
+            <thead>
+                <th scope="col">#</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Categoria</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Capuccino Especial</td>
+                    <td>Bebidas Calientes</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Brownie Casero</td>
+                    <td>Reposteria</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Cafe Americano</td>
+                    <td>Bebidas Calientes</td>
+                </tr>
+            </tbody>
+        </table>
+     </section>
+     </main>
+     
+     <aside>
+        <!-- Aside: contenido secundario, promociones -->
+        <h3>Noticias y eventos</h3>
+        <p>!Participa en nuestro taller de barismo este mes¡</p>
+
+
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Formulario de suscripcion</legend>
+                <label for="nombre">Nombre completo *</label><br>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Ana Pérez"><br>
+                <label for="correo">Correo electrónico *</label><br>
+                <input type="email" id="correo" name="correo" required placeholder="ana@correo.com"><br>
+                <button type="submit">Suscribirme</button>
+                <button type="reset">Limpiar</button>
+            </fieldset>
+
+        </form>
+     </aside>
+
+     <aside>
+        <h2>Enlaces recomendados</h2>
+        <ul>
+            <li>
+                <a
+                href="https://cafearoma.com/blog"
+                target="_blank"
+                title="Visita nuestro blog"
+                >Blog de cafe</a>
+            </li>
+            <li>
+                <a
+                href="https://cafearoma.com/eventos"
+                target="_blank"
+                title="Conoce nuestros eventos"
+                >Eventos</a>
+            </li>
+        </ul>
+     </aside>
+     <footer>
+        <!-- Footer: información de derechos, contacto -->
+         <p>© 2026 Cafeteria Aroma. Todos los derechos reservados.</p>
+         <p>
+            Contacto: <a href="mailto:contacto@aroma.com">Contacto@aroma.com</a>
+         </p>
+     </footer>
+    </body>
+</html>
