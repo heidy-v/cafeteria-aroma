@@ -4,6 +4,13 @@
         <meta charset="UTF-8" />
          <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         <title>Contacto - Cafeteria Aroma</title>
+                <!-- enlace al archivo styles.css -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/print.css" media="print" />
+                <!--tipografia-->
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wg
+        ht@600;800&display=swap">
     </head>
     <body>
         <!-- Header: contiene logo y navegación principal -->
@@ -20,7 +27,7 @@
 
         <main>
             <section>
-                 <form action="#" method="get">
+                 <form action="#" method="get" class="form-pedido">
                      <fieldset>
                      <legend>Datos del cliente</legend>
                      <label for="nombre">Nombre completo *</label><br>
@@ -29,6 +36,7 @@
                      <input type="email" id="correo" name="correo" required placeholder="ana@correo.com"><br>
                      <label for="telefono">Teléfono</label><br>
                      <input type="tel" id="telefono" name="telefono" placeholder="Ej: 71234567"
+              
 
                      pattern="[0-9] {8,}" title="Solo numeros,minimo 8 digitos"><br>
                      <label for="fecha">Fecha de recogida</label><br>
@@ -48,7 +56,7 @@
                      <option value="capuccino">Capuccino Especial</option>
                      </select><br>
                      
-                     <label for="bebida">Postres</label><br>
+                     <label for="bebida" requireds >Postres</label><br>
                      <select id="postre" name="postre" >
                      <option value="seleccion">-- Selecciona un postre --</option>
                      <option value="brownie">Brownie Casero</option>
@@ -56,9 +64,9 @@
                      <option value="cheesecake">Cheesecake</option>
                      </select><br>
 
-                     <label for="tamaño">Tamaño *</label><br>
-                     <label for="pequeno">Pequeño</label>
-                     <input type="radio" id="pequeno" name="tamano" value="pequeno" required>
+                     <label for="tamaño" required >Tamaño *</label><br>
+                     <label for="pequeno" >Pequeño</label>
+                     <input type="radio" id="pequeno" name="tamano" value="pequeno" >
                      <label for="mediano">Mediano</label>
                      <input type="radio" id="mediano" name="tamano" value="mediano">
                      <label for="grande">Grande</label>
@@ -81,7 +89,7 @@
                      name="text"
                      rows="5"
                      cols="30"
-                     placeholder="Ej: Sin canela,entregar en vaso termico...">
+                     placeholder="Ej: Sin canela,entregar en vaso termico..">
                      </textarea>
                      </fieldset>
 
@@ -98,12 +106,13 @@
                      name="direccion"
                      rows="5"
                      cols="30"
-                     placeholder="Calle, número, referencia">
+                     placeholder="Calle, número, referencia.">
                      </textarea>
                      </fieldset>
                      <input type="hidden" name="sucursal" value="central">
-                     <button type="submit">Enviar pedido</button>
-                     <button type="reset">Limpiar</button>
+                     <button type="submit" class="btn-primario">Enviar pedido</button>
+                     <button type="reset" class="btn-secundario">Limpiar</button>
                  </form>
             </section>
+
         </main>

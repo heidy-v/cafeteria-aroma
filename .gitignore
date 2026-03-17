@@ -1,0 +1,9 @@
+# Archivos que .gitignore ignorara y no guardara 
+# carpeta de configuracion de VS Code
+.vscode/
+# Archivos temporales de windows
+Thumbs.db
+# Dependecias de Node.js
+node_modules/
+# Archivos con credencial (en backend)
+.env

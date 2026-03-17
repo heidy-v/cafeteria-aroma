@@ -4,6 +4,13 @@
         <meta charset="UTF-8" />
          <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         <title>Contacto - Cafeteria Aroma</title>
+                <!-- enlace al archivo styles.css -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/print.css" media="print" />
+        <!--tipografia-->
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wg
+        ht@600;800&display=swap">
     </head>
     <body>
         <!-- Header: contiene logo y navegación principal -->
@@ -34,7 +41,8 @@
             </section>
 
             <section>
-            <table border="1">
+                <div class="grid-contacto">
+            <table class="tabla-atencion"  border="1">
                 <caption>
                     Atencion al Publico
                 </caption>
@@ -70,12 +78,8 @@
                     </tr>
                 </tfoot>
             </table>
-            </section>
 
-            <br>
-            <section>
-            <h2>Contacto Rapido</h2>
-            <table border="1">
+            <table class="tabla-equipo" border="1">
                 <caption>
                     Equipo de Atencion
                 </caption>
@@ -101,7 +105,25 @@
                         <td><a href="mailto:contacto@aroma.com">soporte@aroma.com</a></td>
                     </tr>
                 </tbody>
-            </table>
+                </table>
+                </div>
+            </section>
+            
+            <section>
+                <h1>Contactanos</h1>
+                <form class="form-grid" action="#" method="get">
+                <fieldset>
+                <legend>Formulario de Contacto</legend>
+                <label for="nombre">Nombre completo *</label><br>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Ana Pérez"><br>
+                <label for="correo">Correo electrónico *</label><br>
+                <input type="email" id="correo" name="correo" required placeholder="ana@correo.com"><br>
+                <label for="comentario">Comentario o Sugerencia</label><br>
+                <input type="text" id="comentario" name="comentario" required placeholder="Envianos un comentario o sugerencia :)"><br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+                </fieldset>
+                </form>
             </section>
         </main>
 

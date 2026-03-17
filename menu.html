@@ -4,6 +4,13 @@
         <meta charset="UTF-8" />
          <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         <title>Menu - Cafeteria Aroma</title>
+                <!-- enlace al archivo styles.css -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/print.css" media="print" />
+                <!--tipografia-->
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wg
+        ht@600;800&display=swap">
     </head>
     <body>
         <!-- Header: contiene logo y navegación principal -->
@@ -21,11 +28,11 @@
         <!-- Main: contenido principal de la página -->
         <main>
             <!-- Section: bloque temático central -->
-            <section>
+            <section >
                 <h2>Menu de la Semana</h2>
                 <p>Descubre nuestras especialidades.</p>
             </section>
-            <section>
+            <section class="seccion-menu">
                 
                 <ul>
                     <li>Cafe Americano</li>
@@ -36,7 +43,39 @@
             </section>
 
             <section>
-            <table border="1">
+                <h2>Nuestras especialidades</h2>
+                <div class="cards">
+                    <article class="cards">
+                        <h3>Capuccino</h3>
+                        <p>Espumoso y aromatico.</p>
+                    </article>
+                    <article class="cards">
+                        <h3>Latte</h3>
+                        <p>Suave y cremoso.</p>
+                    </article>
+                    <article class="cards">
+                        <h3>Americano</h3>
+                        <p>Clasico, intenso.</p>
+                    </article>
+                    <article class="cards">
+                        <h3>Cold Brew</h3>
+                        <p>Extra suave y frio.</p>
+                    </article>
+                    <article class="cards">
+                        <h3>Frappe</h3>
+                        <p>Espumoso y frio.</p>
+                    </article>
+                    <article class="cards">
+                        <h3>Postres</h3>
+                        <p>Deliciosos </p>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h2>Precios</h2>
+                <div class="table-wrap">
+            <table class="tabla-menu" border="1"  >
                 <CAPtion>
                     Menu 11/02/2026
                 </CAPtion>
@@ -45,7 +84,7 @@
                     <tr>
                         <th scope="col">Categoria</th>
                         <th scope="col">Producto</th>
-                        <th scope="col">Precio (Bs)</th>
+                        <th scope="col"><div class="menu-flex">Precio (Bs)</div></th>
                     </tr>
                 </thead>
 
@@ -53,24 +92,24 @@
                     <tr>
                         <td rowspan="3">Bebidas Calientes</td>
                         <td>Cafe Americano</td>
-                        <td>10</td>
+                        <td >10</td>
                     </tr>
                     <tr>
                         <td>Capuccino Especial</td>
-                        <td>15</td>
+                        <td >15</td>
                     </tr>
                     <tr>
                         <td>Latte con Vainilla</td>
-                        <td>14</td>
+                        <td >14</td>
                     </tr>
                     <tr>
                         <td rowspan="2">Bebidas Frias</td>
                         <td>Frappe de Cafe</td>
-                        <td>18</td>
+                        <td >18</td>
                     </tr>
                     <tr>
                         <td>Limonada con Menta</td>
-                        <td>12</td>
+                        <td >12</td>
                     </tr>
                     <tr>
                         <td rowspan="2">Reposteria</td>
@@ -79,14 +118,14 @@
                     </tr>
                     <tr>
                         <td>Croissant de Mantequilla</td>
-                        <td>9</td>
+                        <td >9</td>
                     </tr>
                 </tbody>
 
                 <tfoot>
                     <tr>
                         <td colspan="2">Oferta Especial: Cafe Americano + Brownie</td>
-                        <td>20</td>
+                        <td >20</td>
                     </tr>
                     <tr>
                         <td colspan="3">Precios referenciales, pueden variar segun el dia.</td>
@@ -94,10 +133,8 @@
                     
                 </tfoot>
             </table>
-            </section>
-            <br>
-        <section>
-            <table border="1">
+        
+            <table class="tabla-desayunos" border="1">
                 <caption>
                     Carta de Desayunos
                 </caption>
@@ -132,20 +169,30 @@
                 </tfoot>
                 
             </table>
-
-        </section>    
+        </div>
+        </section> 
+        
+          <section>
+            <h2>Galeria de Productos</h2>
+            <div class="galeria">
+                <img  id="cafeteria" src="img/cafeteria.jpg" alt="cafeteria">
+                <img src="img/postres.jpg" alt="postres">
+                <img src="img/cafe1.webp" alt="Cafe">
+            </div>
+          </section>
+         
             <section>
                 <h2>Promociones Especiales</h2>
                 <p>Aprovecha estas ofertas:</p>
                 <ol>
-                    <li>2x1 en Capuccino (martes y jueves)</li>
+                    <li class="promo">2x1 en Capuccino (martes y jueves)</li>
                     <li>Combo Brownie + Cafe Americano</li>
                     <img src="img/brownie.jpg" alt="torta de Brownie" width="300">
                     <li>Descuento para estudiantes</li>
                 </ol>
             </section>
             <section>
-                <h2>Glosario de Cafe</h2>
+                <h2 id="glosario">Glosario de Cafe</h2>
                 <p>Aprende sobre nuestros terminos.</p>
                 <dl>
                     <dt>Espresso</dt>
@@ -156,6 +203,8 @@
                     <dd>Preparado en frio durante varias horas para un sabor suave.</dd>
                 </dl>
             </section>
+
+            
         </main>
         
         <aside>

@@ -1,0 +1,706 @@
+/* === TIPOGRAFÍA BASE AROMA === */
+/* Si agregaste Google Fonts */
+:root {
+/* Escala tipográfica */
+--fs-base: 16px; /* párrafos */
+--fs-sm: 14px; /* notas, pie */
+--fs-h3: 20px;
+--fs-h2: 24px;
+--fs-h1: 32px;
+/* Pilas tipográficas */
+--font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+sans-serif;
+--font-heading: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+Arial, sans-serif;
+}
+/* Si NO agregaste Google Fonts, usa esta pila “local”: */
+:root {
+--fs-base: 16px;
+--fs-sm: 14px;
+--fs-h3: 20px;
+--fs-h2: 24px;
+--fs-h1: 32px;
+}
+font-body{ system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-
+serif;}
+
+font-heading{ system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+sans-serif;
+}
+html { font-size: 100%; } /* 1rem = 16px */
+body {
+font-family: var(--font-body);
+font-size: var(--fs-base);
+line-height: 1.6;
+color: #222; /* buen contraste sobre tu fondo #fdf6f0 */
+}
+/* Jerarquía de títulos (usa tu color marrón existente) */
+h1, h2, h3 {
+font-family: var(--font-heading);
+color: brown; /* mantengo tu línea visual */
+text-align: center; /* lo tenías ya */
+line-height: 1.25;
+margin: 0.6em 0 0.4em;
+}
+h1 { font-size: var(--fs-h1); font-weight: 800; letter-spacing: 0.2px; }
+h2 { font-size: var(--fs-h2); font-weight: 700; }
+h3 { font-size: var(--fs-h3); font-weight: 600; }
+/* Párrafos y texto auxiliar */
+p { font-size: var(--fs-base); }
+small, tfoot td { font-size: var(--fs-sm); }
+/*1. Estilo general */
+body {
+    font-family: Arial, sans-serif ; 
+    background-color: #fdf6f0;
+    margin: 10px;
+    box-sizing: border-box; /*Asegura que padding y border se incluyan en el ancho/alto*/
+}
+
+/*2. Encabezados*/
+h1,h2,h3 {
+    color: brown;
+    text-align: center;
+}
+
+/*3. Tablas*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+}
+
+/*4.  Navegacion*/
+nav {
+    background-color: #e6ccb2;
+    padding: 10px;
+    text-align: center;
+}
+/* El a es para que todas los enlaces esten asi*/
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3e2723;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #b65e24af;  /*cambio de color al pasar el mouse */
+}
+
+/* 5. Parrafos */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*Margen vertical suave entre secciones dentro de main*/
+
+main > section{
+    margin: 18px 0;
+}
+
+/*Separacion para aside (bloque lateral)*/
+aside{
+    margin: 16px 0;
+    padding: 10px;
+    background: #fff8f1;
+    border: 1px solid #e1c8ad;
+    border-radius: 6px;
+}
+
+/*Ejercicio 2*/
+/*Encabezado de tabla resaltados*/
+thead td {
+    background: #f2e3d4;
+    color: #3e2723;
+}
+
+/*Pie de tabla con estilo suave*/
+tfoot td {
+    background: #f1e3fb;
+    font-style: italic;
+}
+
+/*Zebra-striping para filas del cuerpo de la tabla (legibilidad) */
+tbody tr:nth-child(odd) {
+    background: #fff5f6;
+}
+
+/*Ejercicio 03*/
+/*Estados de enlaces (global) */
+a:visited {opacity: 0.95;}
+a:active {transform: scale(0.98);}
+
+/*Enlaces dentro de listas (Enlaces utiles)*/
+aside ul li a {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+aside ul li a:hover {
+    background: #ffe2c9;
+}
+
+/*Ejercicio 4*/
+/*Formularios*/
+fieldset { 
+    border: 1px solid #d7bfa7; /*borde del formulario*/
+    padding: 10 px;
+    border-radius: 6px;
+}
+
+legend{
+    font-weight: bold;
+    color: #5a3825;  /*color del titulo del formulario*/
+}
+
+label {
+    display: inline-block;
+    margin: 6px 0 4px;
+}
+
+button {
+    background: brown; /*Color del boton*/
+    color: #f7f3e5; /*Color de la letra dentro del boton*/
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.9;
+}
+
+/*Ejercicio 5*/
+/*Imagenes y videos adaptables*/
+img,video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Ejecicio 06*/
+/*Contenedor nav:sombra ligera y bordes redondeados*/
+nav{
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(62,39,35,0.15);
+}
+
+/*Ejercicio 07*/
+h2.main>section>h2{
+    text-decoration: underline;
+}
+
+/*Guia 2.2 uso de id y class*/
+/*Etiquetas + descendentes: enlaces dentro de la navegacion*/
+nav a {
+    line-height: 1.4;
+}
+
+/*Titulo de bienvenida especifico en index.htnl*/
+#titulo-bienvenida {
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+/*Promocion destacada de menu*/
+.promo { 
+    background: #ffe8d6;
+    border: 1px dashed brown;
+    padding: 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/*Seccion de precios menu*/
+.seccion-precios{
+    text-decoration: underline; /*Subrayado de los textos*/
+} 
+
+/*Tablas especificas*/
+.tabla-compactas th, .tabla-compactas td {
+    padding: 6px; /*Un poco mas de compacto que el general*/
+}
+
+/*Tabla menu parte del encabezado*/
+.tabla-desayunos thead th {
+    background: #f2e3d4;
+    color: #3e2723;
+}
+
+.tabla-desayunos tbody tr:nth-child(odd) {
+background: #fffaf5; /*fondo de las celdas de contenido*/
+}
+
+/*Tablas de contactos*/
+.tabla-atencion thead th {
+    background: #e9dacb;
+}
+.tabla-equipo thead th {
+    background: #ead9cc;
+}
+
+/*Formulario de pedido*/
+.form-pedido fieldset {
+    border: 1px solid #d4e99b; /*borde del cuadro de pedido*/
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: bold;
+}
+
+.form-pedido legend {
+    color: brown;
+    font-weight: bold;
+}
+
+/*input/select/textarea dentro del formulario*/
+.form-pedido label {
+    display: inline-block;
+    margin: 6px 0 4px;
+}
+.form-pedido input, .form-pedido select, .form-pedido textarea {
+    font: inherit;
+    padding: 6px 8px;
+    border: 1px solid #bfa995;
+    border-radius: 4px;
+}
+
+/*Botones reutilizables*/
+.btn {
+    font: inherit;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.btn-primario /*Boton primario*/{
+    background: brown;
+    color: #ffff;
+}
+.btn-secundario /*Boton secundario*/ {
+    background: #d7ccc8;
+    color: #3e2723;
+}
+.btn:hover {opacity: 0.9;}
+
+/*paso 4*/
+/*Regla genral para enlaces del nav*/
+nav a {
+    color: #3e2723; /*Color de los navs*/
+}
+
+/*Regla mas especifica: solo el primer enlace dentro del nav*/
+nav a:first-child {
+    color: #5a3825;
+    font-weight: 900;
+}
+
+/*Caja visual para selecciones de menu */
+.seccion-menu {
+    background: #fff8f1;
+    border: 1px solid #e1c8ad;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 14px 0;
+}
+/*Limitar ancho maximo del contenido principal (mejora la lectura)*/
+main {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/*Ejercicios*/
+/*Ejercico 01*/
+.ventas {
+    background: #fff8f1;
+    border-left: 4px solid brown;
+    padding: 10px;
+}
+/*Ejercicio 02*/
+#glosario {
+    color: #4e342e;
+    background: #f3e5ab;
+    padding: 6px;
+    border-radius: 4px;
+}
+/*Ejercicio 03*/
+.tabla-menu, .tabla-desayunos {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+/*Ejercicio 04*/
+.form-pedido label {
+    font-weight: bold;
+    color: #5a3825;
+}
+/*Ejercicio 05*/
+aside ul li a {
+    display: block;
+    padding: 4px;
+    border-bottom: 1px dotted #c7b29a;
+}
+aside ul li a:hover {
+    background: #ffe2c9;
+}
+footer {
+    text-align: center;
+}
+
+/*Caja de prueba*/
+.caja {
+    width: 200px;
+    height: 120px;
+    background-color: #ffe0b2;/*color de fondo suave*/
+    padding: 50px; /*espacio interno*/
+    border: 3px solid brown; /*Borde visible*/
+    margin: 15px; /*espacio externo*/
+}
+/*caja 2 (box) Ejercicio 02*/
+.caja-margen {
+    width: 200px;
+    height: 120px;
+    background-color: #c8e6c9;
+    border: 2px dashed green;
+    padding: 15px;
+    margin: 50px;
+}
+/*Caja 3 (cajon)*/
+.caja-borde {
+    width: 200px;
+    box-sizing: content-box;
+    padding: 5px;
+    border: 5px solid;
+    margin: 15px;
+}
+
+/*Legibilidad en los bloques de lectura*/
+main {
+    max-width: 980px;
+    margin: 0 auto;
+}
+/*Longitud de linea comoda en parrafos largos*/
+section p {
+    max-width: 70ch; /*70 caracteres por linea*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; /*Titulos centrados, textos alineados a la izquierda*/
+}
+/*Parrafos dentro de aside y tablas: evita lineas muy largas*/
+aside p, td, th {
+    line-height: 1.5;
+}
+
+nav a {
+    font-weight: 600; 
+    font-size: 0.95rem;
+    letter-spacing: 0.2px;
+}
+/*tablas*/
+caption {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+thead th {
+    font-weight: 600;
+}
+
+tfoot td {
+    font-style: italic;
+    opacity: 0.9;
+}
+/*Formularios*/
+label {
+    font-weight: 600;
+}
+input::placeholder, textarea::placeholder {
+    color: #8d7b6f;
+}
+button {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/*Ajustes finos de contraste*/
+/*Eleva un poco el contraste general del texto*/
+/*body {
+    color: #1b1b1b;
+}*/
+/*Enlaces del nav*/
+/*nav a {
+    color: #2d2019;
+}
+nav a:hover {
+    color: #ff5722;
+}*/
+/*Ejercicio 1*/
+/*Jerarquia tipografica global*/
+h1 { font-size: 2rem; font-weight: 800; letter-spacing: 0.2px;}
+h2 {font-size: 1.5rem; font-weight: 700;}
+h3 {font-size: 1.25 rem;}
+p {font-size: 1rem;}
+/*Ejercicio 2*/
+/*class lead en el primer parrafo de bienvenida de index*/
+/*Parrafo destacado de introducion*/
+.lead {
+    font-size: 1.125rem; /*un poco mas grande*/
+    line-height: 1.75;  /*mas aire*/
+    max-width: 70ch;
+    margin: 0 auto; /*centrado del bloqueo en el ancho limitado*/
+}
+/*Ejercicio 3*/
+/*Captions y celdas*/
+caption {
+    font-family: var(--font-heading,inherit);
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 6px 0;
+}
+thead th {font-weight: 600;}
+tbody td {font-size: 0.95rem;}
+tfoot td {font-size: 0.9rem; opacity: 0.95;}
+/*Ejercicio 4*/
+/*Lectura comoda en secciones de texto*/
+section p {
+    max-width: 70ch;    /*70 caracteres por linea*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;  /*parrafos alineados a la izquierda*/
+}
+/*Ejercicio 5*/
+/*Enfasis tipografico en UI*/
+label{font-weight: 600;}
+button, .btn {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-transform: uppercase; /* cambia a none si prefieres*/
+}
+/*Ejercicio 6*/
+h1 {font-size:clamp(1.8rem, 2.5vw, 2.25rem);}
+h2 {font-size: clamp(1.4rem, 2vw, 1.75rem);}
+h3 {font-size: clamp(1.2rem, 1.5vw, 1.35rem);}
+
+/*Flexbox*/
+/*Flexbox en la seccion destacados*/
+.destacados {
+    display: flex; /*Activa el flex*/
+    justify-content: space-around; /*Espacio uniforme entre elementos*/
+    align-items: center; /*Alineacion vertical*/
+    gap: 20px; /*Espacio entre los bloques*/
+    margin: 20px 0;
+}
+/*Estilo para cada item*/
+.destacados .item {
+    background-color: #f8e1d4;
+    border: 1px solid #d7ccc8;
+    padding: 15px;
+    flex: 1; /*Todos crecen al mismo tiempo*/
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.destacados {
+    display: flex;
+    flex-direction: column; /*de la fila pasa a columna*/
+    gap: 10px;
+}
+
+@media (max-width:600px) {
+    .destacados {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/*Usar Flexbos en la barra de navegacion*/
+nav {
+    display: flex;
+    justify-content: center; /*centra los enlaces*/
+    gap: 10px; /*espacio entre enlaces*/
+    background-color: #e6ccb2;
+    padding: 10px;
+}
+/*nav {
+display: flex;
+justify-content: space-between; /*gran espcaio entre enlaces*/
+/*.bienvenida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #f8e1d4;
+}*/
+.menu-flex {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/*=============GRID: Estructura de la portada (index.html)==============*/
+.grid-inicio {
+    display: grid;
+    grid-template-columns: 2fr 1fr;  /*contenido | barra lateral*/
+    grid-template-areas: "hero sidebar" "ventas sidebar";
+    gap: 16PX;
+    align-items: start;
+}
+.grid-inicio .hero {grid-area: hero;}
+.grid-inicio .ventas {grid-area: ventas;}
+.grid-inicio .sidebar {grid-area: sidebar;}
+
+/*Responsive: en movil una sola columna*/
+/* @media (max-width: 768px) {
+    .grid-inicio {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "hero"
+        "ventas"
+        "sidebar";
+    }
+} */
+/*=====GRID: Tablas de menu (menu.html)=====*/
+.grid-tablas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+}
+/*Que las tablas no desborden*/
+.grid-tablas table {
+    width: 100%;
+}
+/*=====GRID: Tablas de contacto (contacto.html)=====*/
+.grid-contacto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+}
+.grid-contacto table {width: 100%;}
+/*Tarjetas suaves para secciones en grid (reutilizable)*/
+.grid-inicio .hero,
+.grid-inicio .ventas,
+.grid-inicio .sidebar,
+.grid-tablas table,
+.grid-contacto table {
+    background: #fffaf5; /*combina con la paleta*/
+    border: 1px solid #e1c8ad;
+    border-radius: 8px;
+    padding: 10px;        /*ojo: en tablas añade margen interior al contenedor, no a celdas*/
+}
+
+/*Titulos centrados ya estan, refuerzo el margen*/
+.grid-inicio h2,
+.grid-tablas caption,
+.grid-contacto caption {
+    margin-top: 6px;
+}
+/*Haz que "ventas pueda ocupar toda la fila si el espacio lo permite*/
+@media (min-width:1024px) {
+    .grid-inicio .ventas-amplia {
+        grid-column: 1/3; /*Abarca desde la col 1 hasta antes de la 3 (2 columnas)*/
+    }
+}
+.galeria {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+}
+.galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #e1c8ad;
+    border-radius: 6px;
+}
+/*Para una mejor visualizacion de la imagen cefeteria*/
+#cafeteria{
+    height: 290 px;
+}
+
+/*Centrar captions y alinear contenido de las tablas en grid-contacto */
+.grid-contacto {
+    align-items: start; /*alinea las tablas por la parte superior*/
+    justify-items: stretch;   /*Que ocupe el ancho disponible*/
+}
+.grid-contacto caption {
+    text-align: center;
+    font-weight: 700;
+}
+/*Reto 
+Variante: sidebar arriba en pantallas anchas
+@media (min-width: 1200px){
+    .grid-inicio-alt {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "sidebar hero"
+        "sidebar ventas";
+    }
+}*/  /*No me gusta el resultado*/
+
+/*2.7-Contenedor y tipografia fluida*/
+:root {--container: min(1100px, 92vw)}
+main, header, footer, aside { max-width: var(--container);margin-inline: auto;}
+h1 {font-size: clamp(1.6rem, 2vw + 1rem, 3rem);}
+h2{ font-size: clamp(1.3rem, 1.2vw + 0.9rem, 2rem);}
+p, li {line-height: 1.6;}
+img, video{ max-width: 100%; height: auto;}
+
+/*Navar (apoyado en tu nav existente) */
+/* nav {display: flex; flex-wrap; gap: .5rem 1rem; justify-content: center;}
+nav a {display: inline-block; text-decoration: none; padding: .4rem .6rem;}
+
+@media (min-width: 600px) {nav {gap: .5rem 1.5rem; } } */
+
+/*Layout home: apilado en movil, 2 columnas en >900px */
+/* .home {display: grid;gap: 1rem;}
+@media (min-width: 900px) {
+    .home { grid-template-columns: 2fr 2fr; align-items: start;}
+} */
+
+/*Utilidades de visibilidad */
+/*.only-mobile {display: block;}
+.only-desktop {display: none;}
+@media (min-width: 900px) {
+    .only-mobile {display: none;}
+    .only-desktop {display: block;}
+}*/
+
+/*Cards responsivas */
+.cards {display: grid; grid-template-columns: 1fr; gap: 1rem;}
+.cards {background: #fff; border: 1px solid #ddd; padding: 1rem; border-radius: .5rem;}
+
+@media (min-width: 600px) {.cards { grid-template-columns: repeat(2, 1fr);}}
+@media (min-width: 900px) {.cards {grid-template-columns: repeat(3, 1fr);}}
+@media (min-width: 1200px) {.cards {grid-template-columns: repeat(4, 1fr);}}
+
+/*Tablas desplegables en movil*/
+/*.table-wrap {overflow-x: auto;}
+.table-wrap table {min-width: 600px;}*/
+
+/*Padding de celdas adaptativo */
+/*th, td {padding: 5rem;}
+@media (min-width: 600px) {th, td {padding: 8rem;}}*/
+/*Formulario multi-columna*/
+.form-grid {display: grip; gap: 8rem;} /*1 col en movil*/
+@media (min-width: 900px) {
+    .form-grid {grid-template-columns: 1fr 1fr;} /*2 cols */
+    .form-grid textarea, .form-grid button {grid-column: 1 / -1;}
+}
+@media (min-width: 1200px) {
+    .form-grid {grid-template-columns: 1fr 1fr 1fr; } /*3 cols*/
+    .form-grid textarea, .form-grid button { grid-column: 1 / -1;}
+}
+/*Realce leve de tarjetas y aside */
+.cards, aside.promo {background: #fff; border: 1px solid #e7d9cc; border-radius: 5rem;}
+
+/*Imagen "hero" con recorte elegante si la usas como fondo en un contenedor */
+.hero-img {height: 280px; background-size: cover; background-position: center; border-radius: 5rem;}
+
+/*Si usas dos tablas lado a lado cuando hay espacio */
+.grid-contacto {display: grid; gap: 1rem;}
+@media (min-width: 900px) {.grid-contacto {grid-template-columns: 1fr 1fr;}}
